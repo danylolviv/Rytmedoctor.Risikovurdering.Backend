@@ -1,7 +1,7 @@
 using Moq;
 using Xunit;
 
-namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.IServices
+namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.IServices.Test
 {
   public class IQuestionServiceTest
   {
