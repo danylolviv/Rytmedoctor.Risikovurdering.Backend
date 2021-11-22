@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Services" />
+      <ProjectReference Include="..\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj" />
     </ItemGroup>
 
 </Project>

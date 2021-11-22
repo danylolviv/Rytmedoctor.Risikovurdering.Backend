@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanyloSoft.Rytmedoktor.Risi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{800D044A-3F43-4212-BBFC-FC1BCF5D0A50}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreTests", "CoreTests", "{8D51C508-7852-482D-B0F9-D503CDA41DC3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core-Tests", "Core-Tests", "{8D51C508-7852-482D-B0F9-D503CDA41DC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain", "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj", "{D7235B58-8B2E-4292-AE77-D19A1ACDDE1B}"
 EndProject

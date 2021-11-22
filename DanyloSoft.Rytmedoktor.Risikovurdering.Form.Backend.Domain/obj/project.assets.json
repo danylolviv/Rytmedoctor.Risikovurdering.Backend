@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/1.0.0": {
+      "type": "project",
+      "path": "../DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj",
+      "msbuildProject": "../DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/danylolviv/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj": {
+              "projectPath": "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
