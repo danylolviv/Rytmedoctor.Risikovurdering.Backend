@@ -1,4 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/danylolviv/Library/Caches/JetBrains/Rider2021.2/resharper-host/temp/Rider/vAny/CoverageData/_DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.-1568689010/Snapshot/snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e017dac1_002Dd1fa_002D4607_002D9cf5_002Ddb0639897f11/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IQuestionService_IsAvailable" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend" Presentation="&amp;lt;Core-Tests&amp;gt;" /&gt;
+  &lt;Or&gt;
+    &lt;Project Location="/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend" Presentation="&amp;lt;Core-Tests&amp;gt;" /&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::B41AFB6F-4556-4629-9BBB-3F0B3C45509F::net5.0::DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.Models.Test.QuestionTypeTest&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
