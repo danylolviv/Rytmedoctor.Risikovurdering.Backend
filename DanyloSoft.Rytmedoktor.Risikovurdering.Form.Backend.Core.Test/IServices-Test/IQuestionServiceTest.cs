@@ -26,5 +26,18 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.IService
       var service = mockService.Object;
       Assert.Equal(expectedList, service.GetQuestions());
     }
+
+    [Fact]
+    public void GetQuestionById_ProvidedWithId_ReturnsQuestion()
+    {
+      var mockService = new Mock<IQuestionService>();
+      var expectedObject = new FormQuestion();
+
+      mockService.Setup(q => q.GetQuestionById(1))
+        .Returns(expectedObject);
+      
+      var service = mockService.Object;
+      Assert.Equal(expectedObject, service.GetQuestionById(1));
+    }
   }
 }

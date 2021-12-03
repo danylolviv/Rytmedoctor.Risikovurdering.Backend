@@ -57,6 +57,18 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
             .UseSqlite("Data Source=SurveyForm.db");
         }, ServiceLifetime.Transient);
       
+      services.AddCors(option =>
+      {
+        option.AddPolicy("rytmedoctor-backend-policy",
+          builder =>
+          {
+            builder
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .WithOrigins("http://localhost:4200");
+          });
+      });
+      
       services.AddScoped<IQuestionService, QuestionService>();
       services.AddScoped<IQuestionRepository, QuestionRepository>();
       
@@ -86,6 +98,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
       app.UseRouting();
 
       app.UseAuthorization();
+      
+      app.UseCors("rytmedoctor-backend-policy");
 
       app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
     }

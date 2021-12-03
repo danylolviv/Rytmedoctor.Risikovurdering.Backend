@@ -6,5 +6,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain
   public interface IQuestionRepository
   {
     List<FormQuestion> FindAllQuestions();
+    FormQuestion FindQuestionById(int id);
   }
 }

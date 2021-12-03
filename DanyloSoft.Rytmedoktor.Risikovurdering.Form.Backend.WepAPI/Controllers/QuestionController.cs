@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Models;
+using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,12 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
         public ActionResult<List<FormQuestion>> GetQuestions()
         {
             return _service.GetQuestions();
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<FormQuestion> GetQuestionById(int id)
+        {
+            return _service.GetQuestionById(id);
         }
     }
 }

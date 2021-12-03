@@ -24,5 +24,20 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.IRepos
       var repo = mockRepository.Object;
       Assert.Equal(expectedList, repo.FindAllQuestions());
     }
+
+    [Fact]
+    public void GetQuestionById_WithIdProvided_ReturnsQuestion()
+    {
+      var mockRepository = new Mock<IQuestionRepository>();
+      var questionObject = new FormQuestion();
+      int mockId = 1;
+
+      mockRepository.Setup(g => g.FindQuestionById(mockId))
+        .Returns(questionObject);
+      var repo = mockRepository.Object;
+      Assert.Equal(questionObject, repo.FindQuestionById(mockId));
+    }
+    
   }
+  
 }
