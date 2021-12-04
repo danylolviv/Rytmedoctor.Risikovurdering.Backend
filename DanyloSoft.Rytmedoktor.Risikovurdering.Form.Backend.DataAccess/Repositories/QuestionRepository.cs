@@ -39,7 +39,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
 
 
 
-      return _ctx.FormQuestions
+       var list = _ctx.FormQuestions
         .Include(t => t.Type)
         .Include(o => o.AnswerOptions)
         .Select(q => new FormQuestion
@@ -51,6 +51,11 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
           Type = new QuestionType {Id = q.Type.Id, TypeName = q.Type.TypeName},
           AnswerOptions = tr.ToListFAO(q.AnswerOptions)
         }).ToList();
+       foreach (var q in list.ToList())
+       {
+         if (q.Id == 999) list.Remove(q);
+       }
+       return list;
     }
 
     public FormQuestion FindQuestionById(int id)

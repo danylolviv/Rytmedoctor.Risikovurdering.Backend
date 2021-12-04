@@ -39,6 +39,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
         {
           Id = 3, Title = "Question3", Description = "Here is q333", TypeId = 3
         });
+        _ctx.FormQuestions.Add(new FormQuestionEntity
+        {
+          Id = 999, Title = "New Question", Description = "New description", TypeId = 3
+        });
         
     #endregion
       
@@ -55,7 +59,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 9, QuestionId  = 3, OptionText = "Option1"});
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 10, QuestionId  = 3, OptionText = "Option2"});
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 11, QuestionId  = 3, OptionText = "Option3"});
-      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 12, QuestionId  = 3, OptionText = "Option4"});
+      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 12, QuestionId  = 3, OptionText = "Option4"}); 
+      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 999, QuestionId  = 999, OptionText = "Remove Option"});
       
     #endregion
       
