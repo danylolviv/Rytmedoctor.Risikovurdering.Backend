@@ -37,10 +37,9 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
         {
             if (updatedQuestion.Id == 999)
             {
-                Console.WriteLine("new question without an id" + updatedQuestion.Title );    
-                return _service.GetQuestionById(2);
+                return _service.CreateQuestion(updatedQuestion);
             }
-            Console.WriteLine("Since id does exist it is updated question" + updatedQuestion.Title);
+            
             return _service.GetQuestionById(1);
 
 

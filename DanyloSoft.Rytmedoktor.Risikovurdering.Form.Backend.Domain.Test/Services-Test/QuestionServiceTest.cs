@@ -68,5 +68,13 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.Servic
         .Returns(expectedQuestion);
       Assert.Equal(expectedQuestion, _service.GetQuestionById(mockId));
     }
+
+    [Fact]
+    public void CreateQuestion_ProvidedWithFormQuestion_ReturnsQuestion()
+    {
+      var expectedQuestion = new FormQuestion();
+      _mock.Setup(r => r.CreateQuestion(expectedQuestion))
+        .Returns(expectedQuestion);
+    }
   }
 }

@@ -73,5 +73,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
           Type = new QuestionType {Id = q.Type.Id, TypeName = q.Type.TypeName}
         }).FirstOrDefault(q => q.Id == id);
     }
+
+    public FormQuestion CreateQuestion(FormQuestion expectedQuestion)
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }
