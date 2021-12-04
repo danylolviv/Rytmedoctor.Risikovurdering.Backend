@@ -4,4 +4,8 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj" />
+    </ItemGroup>
+
 </Project>

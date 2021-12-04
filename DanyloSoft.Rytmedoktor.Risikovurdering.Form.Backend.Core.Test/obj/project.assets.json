@@ -1843,6 +1843,19 @@
         "runtime": {
           "bin/placeholder/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll": {}
         }
+      },
+      "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll": {}
+        }
       }
     }
   },
@@ -6456,11 +6469,17 @@
       "type": "project",
       "path": "../DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj",
       "msbuildProject": "../DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj"
+    },
+    "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj",
+      "msbuildProject": "../DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core >= 1.0.0",
+      "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "Moq >= 4.16.1",
       "coverlet.collector >= 3.0.2",
@@ -6495,6 +6514,9 @@
           "projectReferences": {
             "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj": {
               "projectPath": "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj"
+            },
+            "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj": {
+              "projectPath": "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj"
             }
           }
         }

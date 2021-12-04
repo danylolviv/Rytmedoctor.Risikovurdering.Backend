@@ -22,6 +22,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.csproj" />
+      <ProjectReference Include="..\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain\DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj" />
     </ItemGroup>
 
 </Project>
