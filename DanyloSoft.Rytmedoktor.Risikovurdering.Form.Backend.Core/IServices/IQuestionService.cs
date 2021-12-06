@@ -7,6 +7,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices
   {
     List<FormQuestion> GetQuestions();
     FormQuestion GetQuestionById(int id);
-    FormQuestion CreateQuestion(FormQuestion expectedObject);
+    FormQuestion CreateQuestion(FormQuestion newQuestion);
+    FormQuestion UpdateQuestion(FormQuestion updatedQuestion);
   }
 }

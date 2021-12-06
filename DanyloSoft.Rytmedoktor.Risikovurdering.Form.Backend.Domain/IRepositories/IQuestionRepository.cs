@@ -8,5 +8,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain
     List<FormQuestion> FindAllQuestions();
     FormQuestion FindQuestionById(int id);
     FormQuestion CreateQuestion(FormQuestion expectedQuestion);
+    FormQuestion UpdateQuestion(FormQuestion updatedQuestion);
   }
 }
