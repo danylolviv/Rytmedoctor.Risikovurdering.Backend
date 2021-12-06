@@ -26,5 +26,12 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services
     {
       return _repo.FindQuestionById(id);
     }
+
+    public FormQuestion CreateQuestion(FormQuestion expectedObject)
+    {
+      var variable = expectedObject;
+      
+      return _repo.CreateQuestion(expectedObject);
+    }
   }
 }

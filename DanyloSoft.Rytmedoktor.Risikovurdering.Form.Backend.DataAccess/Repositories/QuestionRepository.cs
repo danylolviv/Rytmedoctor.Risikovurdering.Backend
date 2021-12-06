@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Models;
+using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Entities;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Transformers;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain;
 using Microsoft.EntityFrameworkCore;
@@ -53,7 +54,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
         }).ToList();
        foreach (var q in list.ToList())
        {
-         if (q.Id == 999) list.Remove(q);
+         if (q.Id == 1) list.Remove(q);
        }
        return list;
     }
@@ -72,6 +73,39 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
           AnswerOptions = tr.ToListFAO(q.AnswerOptions),
           Type = new QuestionType {Id = q.Type.Id, TypeName = q.Type.TypeName}
         }).FirstOrDefault(q => q.Id == id);
+    }
+
+    public FormQuestion CreateQuestion(FormQuestion expectedQuestion)
+    {
+      var newQuestion = new FormQuestionEntity()
+      {
+        Title = expectedQuestion.Title,
+        Description = expectedQuestion.Description,
+        TypeId = expectedQuestion.Type.Id,
+        AnswerOptions = expectedQuestion.AnswerOptions != null
+          ? expectedQuestion.AnswerOptions.Select(ao => new AnswerOptionEntity
+          {
+            OptionText = ao.OptionText,
+            Weight = ao.Weight
+          }).ToList() : null
+      };  
+      // todo entity states
+      //newQuestion.State = EntityState.
+      var createdQuestion = _ctx.FormQuestions.Add(newQuestion).Entity;
+      // Todo Creating new question with options at the same time, without doing multiple requests.
+      _ctx.SaveChanges();
+      /*foreach (var option in expectedQuestion.AnswerOptions)
+      {
+        var newOption = new AnswerOptionEntity()
+        {
+          OptionText = option.OptionText,
+          Weight = option.Weight,
+          QuestionId = createdQuestion.Id
+        };
+        _ctx.AnswerOptions.Add(newOption);
+      }
+      _ctx.SaveChanges();*/
+      return new FormQuestion() {Title = createdQuestion.Title};
     }
   }
 }
