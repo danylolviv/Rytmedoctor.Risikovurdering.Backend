@@ -35,12 +35,12 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
         [HttpPut("{id}")]
         public ActionResult<FormQuestion> UpdateQuestion(FormQuestion updatedQuestion)
         {
-            if (updatedQuestion.Id == 999)
+            if (updatedQuestion.Id == 1)
             {
                 return _service.CreateQuestion(updatedQuestion);
             }
             
-            return _service.GetQuestionById(1);
+            return _service.GetQuestionById(2);
 
 
         }

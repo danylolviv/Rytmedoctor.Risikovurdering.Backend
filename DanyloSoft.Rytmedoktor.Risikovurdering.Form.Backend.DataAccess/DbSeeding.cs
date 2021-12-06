@@ -29,7 +29,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
     
         _ctx.FormQuestions.Add(new FormQuestionEntity
         {
-          Id = 1, Title = "Question1", Description = "Here is q1", TypeId = 1
+          Id = 4, Title = "Question1", Description = "Here is q1", TypeId = 1
         });
         _ctx.FormQuestions.Add(new FormQuestionEntity
         {
@@ -41,17 +41,17 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
         });
         _ctx.FormQuestions.Add(new FormQuestionEntity
         {
-          Id = 999, Title = "New Question", Description = "New description", TypeId = 3
+          Id = 1, Title = "New Question", Description = "New description", TypeId = 3
         });
         
     #endregion
       
     #region Options Seeding
     
-      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 1, QuestionId  = 1,OptionText = "Option1"});
-      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 2, QuestionId  = 1, OptionText = "Option2"});
-      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 3, QuestionId  = 1, OptionText = "Option3"});
-      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 4, QuestionId  = 1, OptionText = "Option4"});
+      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 13, QuestionId  = 4,OptionText = "Option1"});
+      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 2, QuestionId  = 4, OptionText = "Option2"});
+      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 3, QuestionId  = 4, OptionText = "Option3"});
+      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 4, QuestionId  = 4, OptionText = "Option4"});
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 5, QuestionId  = 2,  OptionText = "Option1"});
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 6, QuestionId  = 2, OptionText = "Option2"});
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 7, QuestionId  = 2, OptionText = "Option3"});
@@ -60,7 +60,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 10, QuestionId  = 3, OptionText = "Option2"});
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 11, QuestionId  = 3, OptionText = "Option3"});
       _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 12, QuestionId  = 3, OptionText = "Option4"}); 
-      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 999, QuestionId  = 999, OptionText = "Remove Option"});
+      _ctx.AnswerOptions.Add(new AnswerOptionEntity {Id = 1, QuestionId  = 1, OptionText = "Remove Option"});
       
     #endregion
       
