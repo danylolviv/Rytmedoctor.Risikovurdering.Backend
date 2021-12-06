@@ -5,11 +5,7 @@
     <projectFile profileName="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI">DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d3cdf7c-7c69-46d7-8a39-89ef7957e156" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/SurveyForm.db-shm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/SurveyForm.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2d3cdf7c-7c69-46d7-8a39-89ef7957e156" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
