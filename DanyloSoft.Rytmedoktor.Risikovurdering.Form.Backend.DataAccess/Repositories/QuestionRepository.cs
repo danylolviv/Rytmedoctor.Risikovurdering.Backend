@@ -106,6 +106,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
       }
       _ctx.SaveChanges();*/
       return new FormQuestion() {Title = createdQuestion.Title};
+      
+      // Strting on update
     }
   }
 }
