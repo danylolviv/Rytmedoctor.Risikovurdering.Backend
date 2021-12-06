@@ -40,7 +40,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
                 return _service.CreateQuestion(updatedQuestion);
             }
             
-            return _service.GetQuestionById(2);
+            return _service.UpdateQuestion(updatedQuestion);
 
 
         }

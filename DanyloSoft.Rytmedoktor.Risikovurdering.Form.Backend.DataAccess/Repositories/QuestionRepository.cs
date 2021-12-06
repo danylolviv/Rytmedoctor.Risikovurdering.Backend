@@ -109,5 +109,43 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
       
       // Strting on update
     }
+
+    public FormQuestion UpdateQuestion(FormQuestion updatedQuestion)
+    {
+      // Deleting old options
+      var oldOptions = _ctx.AnswerOptions
+        .Where(op => op.QuestionId == updatedQuestion.Id)
+        .Select(o => new AnswerOptionEntity()
+        {
+          Id = o.Id
+        });
+      _ctx.AnswerOptions.RemoveRange(oldOptions);
+      _ctx.SaveChanges();
+      //Adding the options that are needed
+      var newOptions = updatedQuestion.AnswerOptions
+        .Select(o => new AnswerOptionEntity()
+        {
+          OptionText = o.OptionText,
+          Weight = o.Weight,
+          QuestionId = updatedQuestion.Id
+        });
+      _ctx.AnswerOptions.AddRange(newOptions);
+      
+      // Updating fields on the question
+      var upQuestion = new FormQuestionEntity()
+      {
+        Id = updatedQuestion.Id,
+        Title = updatedQuestion.Title,
+        Description = updatedQuestion.Description,
+        TypeId = updatedQuestion.Type.Id
+      };
+      
+      //Executing update
+      _ctx.FormQuestions.Update(upQuestion);
+      _ctx.SaveChanges();
+      
+      //retrieving updated question and returning it
+      return FindQuestionById(updatedQuestion.Id);
+    }
   }
 }
