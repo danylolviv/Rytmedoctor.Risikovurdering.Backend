@@ -147,5 +147,18 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
       //retrieving updated question and returning it
       return FindQuestionById(updatedQuestion.Id);
     }
+
+    public FormQuestion DeleteQuestion(int id)
+    {
+      var deletedEntity = _ctx.FormQuestions
+        .Remove(new FormQuestionEntity() {Id = id}).Entity;
+      var deletedModel =  new FormQuestion()
+      {
+        Id = deletedEntity.Id,
+        Title = deletedEntity.Title
+      };
+      _ctx.SaveChanges();
+      return deletedModel;
+    }
   }
 }
