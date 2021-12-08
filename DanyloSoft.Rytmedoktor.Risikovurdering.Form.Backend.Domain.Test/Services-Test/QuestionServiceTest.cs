@@ -6,7 +6,8 @@ using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services;
 using Moq;
 using Xunit;
 
-namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.Services
+namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
+  Services_Test
 {
   public class QuestionServiceTest
   {
@@ -30,7 +31,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.Servic
     {
       Assert.Throws<InvalidDataException>(
         () => new QuestionService(null)
-        );
+      );
     }
 
     [Fact]
@@ -95,6 +96,26 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.Servic
       var expectedQuestion = new FormQuestion();
       _service.UpdateQuestion(expectedQuestion);
       _mock.Verify(r => r.UpdateQuestion(expectedQuestion), Times.Once);
+    }
+
+    [Fact]
+    public void DeleteQuestion_ProvidedWithId_ReturnsDeletedQuestion()
+    {
+      var expectedQuestion = new FormQuestion();
+      var id = 9;
+      _mock.Setup(r => r.DeleteQuestion(id))
+        .Returns(expectedQuestion);
+      Assert.Equal(expectedQuestion, _service.DeleteQuestion(id));
+    }
+    
+    [Fact]
+    public void DeleteQuestion_CallsDatabase_Once()
+    {
+      //todo amount of times called check on all methods
+      var expectedQuestion = new FormQuestion();
+      var id = 9;
+      _service.DeleteQuestion(id);
+      _mock.Verify(r => r.DeleteQuestion(id), Times.Once);
     }
   }
 }
