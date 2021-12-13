@@ -9,6 +9,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
     public DbSeeding(MainDbContext ctx)
     {
       _ctx = ctx;
+      SeedDevelopment();
     }
 
     public void SeedDevelopment()

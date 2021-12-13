@@ -109,6 +109,14 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
             .UseSqlite("Data Source=SurveyForm.db");
         }, ServiceLifetime.Transient);
       
+      services.AddDbContext<AuthDbContext>(
+        opt =>
+        {
+          opt
+            .UseLoggerFactory(loggerFactory)
+            .UseSqlite("Data Source=Security.db");
+        }, ServiceLifetime.Transient);
+      
       services.AddCors(option =>
       {
         option.AddPolicy("rytmedoctor-backend-policy",
@@ -121,20 +129,27 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
           });
       });
       
+      //Main Setup
       services.AddScoped<IQuestionService, QuestionService>();
       services.AddScoped<IQuestionRepository, QuestionRepository>();
       services.AddScoped<ISecurityService, SecurityService>();
-
-
-      // Todo Create corse
-
-
+      
+      // Security setup
+      services.AddScoped<IUserRepository, UserRepository>();
+      services.AddScoped<ISecurityService, SecurityService>();
+      services.AddScoped<IAuthUserService, AuthUserService>();
+      
     }
     
     
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MainDbContext ctx)
+    public void Configure(
+      IApplicationBuilder app, 
+      IWebHostEnvironment env, 
+      MainDbContext ctx,
+      AuthDbContext authCtx
+      )
     {
       if (env.IsDevelopment())
       {
@@ -142,8 +157,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
         app.UseSwagger();
         app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json",
           "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI v1"));
-        DbSeeding seeder = new DbSeeding(ctx);
-        seeder.SeedDevelopment();
+        
+        // We need this for one thing only and it is enough to cal the method from the constructor.
+        new DbSeeding(ctx);
+        new AuthDbSeeding(authCtx);
       }
 
       app.UseHttpsRedirection();
