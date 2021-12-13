@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Models;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
         {
             _service = service;
         }
+        [Authorize]
         [HttpGet]
         public ActionResult<List<FormQuestion>> GetQuestions()
         {
