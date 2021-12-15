@@ -2,7 +2,7 @@ using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Entities;
 
 namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
 {
-  public class DbSeeding
+  public class DbSeeding : IMainDbSeeding
   {
     private MainDbContext _ctx;
 
@@ -66,6 +66,11 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
       
     _ctx.SaveChanges();
       
+    }
+
+    public void SeedProduction()
+    {
+      throw new System.NotImplementedException();
     }
   }
 }
