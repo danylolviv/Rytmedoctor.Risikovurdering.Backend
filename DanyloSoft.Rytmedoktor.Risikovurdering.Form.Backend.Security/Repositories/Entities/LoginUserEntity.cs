@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
 namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
 {
   public class LoginUserEntity
@@ -5,5 +7,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
     public int Id { get; set; }
     public string Username  { get; set; }
     public string HashedPassword { get; set; }
+    public string Salt { get; set; }
   }
 }

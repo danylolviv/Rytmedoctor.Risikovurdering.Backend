@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/cYOhnFwwkiSlrCTr9ZDvSWRMKN9dRqx8GeYH9tSuj0UxBUYQ9KrmhEcgYHm62AYe7qMlz1yw3IRed1ztWEiFQ==",
+  "dgSpecHash": "gGmFpGW8dXCluVct9ojCobZhV+Q/4PS5yXpBz31QQQ4EKVS1b/kVezkbtyZUKVqsFEBgUIT7v4RA4QwKQpmKcg==",
   "success": true,
   "projectFilePath": "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.csproj",
   "expectedPackageFiles": [
     "/Users/danylolviv/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
     "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.12/microsoft.aspnetcore.authentication.jwtbearer.5.0.12.nupkg.sha512",
+    "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.cryptography.internal/5.0.12/microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",
+    "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/5.0.12/microsoft.aspnetcore.cryptography.keyderivation.5.0.12.nupkg.sha512",
     "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.razor.language/5.0.0/microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",

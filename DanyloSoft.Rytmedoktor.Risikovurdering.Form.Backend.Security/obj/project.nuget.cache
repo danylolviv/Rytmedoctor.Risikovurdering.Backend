@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DpPiQ7gIrboUMUnTMAXGEl51okxIU5Pv+8FNy+BKkI+VPzavhmg6L7GAub/+KTLIlXgNSvYrX92Rqo+0jYLItA==",
+  "dgSpecHash": "q+Sl3M/pK1RlthsA/r0ClWVlbjN6cA0adnh72FuoMCLlZRqjyujg5DNMTgJzYt9JRFQnSiu6o1tyoaHFcvF2iA==",
   "success": true,
   "projectFilePath": "/Users/danylolviv/Documents/AAA FullStack Projects/RytmedoktorRisikovurdering/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.csproj",
   "expectedPackageFiles": [
+    "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.cryptography.internal/5.0.12/microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",
+    "/Users/danylolviv/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/5.0.12/microsoft.aspnetcore.cryptography.keyderivation.5.0.12.nupkg.sha512",
     "/Users/danylolviv/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",
     "/Users/danylolviv/.nuget/packages/microsoft.entityframeworkcore/5.0.12/microsoft.entityframeworkcore.5.0.12.nupkg.sha512",
     "/Users/danylolviv/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.12/microsoft.entityframeworkcore.abstractions.5.0.12.nupkg.sha512",

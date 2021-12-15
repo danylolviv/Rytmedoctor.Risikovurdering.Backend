@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
 namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
 {
@@ -20,10 +22,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
 
     public IConfiguration Configuration { get; set; }
 
-    public JwtToken generateJwtToken(string username, string hashedPassword)
+    public JwtToken generateJwtToken(string username, string password)
     {
-      var user = _authServ.Login(username, hashedPassword);
-      if (user!= null)
+      var user = _authServ.GetUser(username);
+      if (Authenticate(user, password))
       {
         var securityKey =
           new SymmetricSecurityKey(
@@ -42,6 +44,25 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
         }; 
       }
       return new JwtToken() {Message = "user was not forund in database"};
+    }
+
+    private bool Authenticate(AuthUser user, string password)
+    {
+      if (user == null || user.HashedPassword.Length <= 0 || user.Salt.Length <= 0) return false;
+      
+        var hashedPassword = HashedPassword(user.Salt, password);
+
+        return hashedPassword.Equals(user.HashedPassword);
+    }
+
+    public string HashedPassword(byte[] userSalt, string password)
+    {
+      return Convert.ToBase64String(KeyDerivation.Pbkdf2(
+        password: password,
+        salt: userSalt,
+        prf: KeyDerivationPrf.HMACSHA256,
+        iterationCount: 100000,
+        numBytesRequested: 256 / 8));
     }
   }
 }

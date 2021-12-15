@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Text;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Transformers;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,17 +21,18 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
         _ctx = ctx;
       }
     }
-
-    public AuthUser FindUser(string username, string hashedPassword)
+    
+    public AuthUser FindUser(string username)
     {
       var userEntity = _ctx.LoginUsers.FirstOrDefault(user =>
-        hashedPassword.Equals(user.HashedPassword) &&
         username.Equals(user.Username));
       if (userEntity == null) return null;
       return new AuthUser()
       {
         Id = userEntity.Id,
-        Username = userEntity.Username
+        Username = userEntity.Username,
+        HashedPassword = userEntity.HashedPassword,
+        Salt = Encoding.ASCII.GetBytes(userEntity.Salt)
       };
     }
   }

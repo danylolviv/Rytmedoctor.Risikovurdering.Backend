@@ -133,12 +133,14 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
       services.AddScoped<IQuestionService, QuestionService>();
       services.AddScoped<IQuestionRepository, QuestionRepository>();
       services.AddScoped<ISecurityService, SecurityService>();
+      services.AddScoped<IMainDbSeeding, DbSeeding>();
       
       // Security setup
       services.AddScoped<IUserRepository, UserRepository>();
       services.AddScoped<ISecurityService, SecurityService>();
       services.AddScoped<IAuthUserService, AuthUserService>();
-      
+      services.AddScoped<IAuthDbSeeder, AuthDbSeeding>();
+
     }
     
     
@@ -148,7 +150,9 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
       IApplicationBuilder app, 
       IWebHostEnvironment env, 
       MainDbContext ctx,
-      AuthDbContext authCtx
+      AuthDbContext authCtx,
+      IMainDbSeeding mainDbSeeding,
+      IAuthDbSeeder authDbSeeder
       )
     {
       if (env.IsDevelopment())
@@ -159,8 +163,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
           "DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI v1"));
         
         // We need this for one thing only and it is enough to cal the method from the constructor.
-        new DbSeeding(ctx);
-        new AuthDbSeeding(authCtx);
+        
+        mainDbSeeding.SeedDevelopment();
+        authDbSeeder.SeedDevelopment();
+        
       }
 
       app.UseHttpsRedirection();

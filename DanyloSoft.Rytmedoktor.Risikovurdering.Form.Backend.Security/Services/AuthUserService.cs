@@ -9,9 +9,9 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
       _userRepo = userRepo;
     }
     
-    public AuthUser Login(string username, string hashedPassword)
+    public AuthUser GetUser(string username)
     {
-      return _userRepo.FindUser(username, hashedPassword);
+      return _userRepo.FindUser(username);
     }
   }
 }
