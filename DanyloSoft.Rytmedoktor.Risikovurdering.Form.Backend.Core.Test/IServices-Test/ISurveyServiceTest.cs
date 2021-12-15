@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Models;
 using Moq;
 using Xunit;
@@ -7,9 +8,11 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.IService
 {
   public class ISurveyServiceTest
   {
+    private Mock<ISurveyService> _serviceObject;
     public ISurveyServiceTest()
     {
       
+      _serviceObject = new Mock<ISurveyService>();
     }
     [Fact]
     public void ISurveyService_IsAvailable()
@@ -20,15 +23,19 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.IService
 
     [Fact]
     public void
-      ISurveyService_ProvidedWith_ListOfPairsAndUsername_Returnsboolean()
+      SubmitSurvey_ProvidedWith_ListOfPairsAndUsername_Returnsboolean()
     {
       var expectedValue = true;
       var providedList = new List<QuestionAnswerPair>();
-      var usernameStr = "username";
-    }
-  }
+      var username = "username";
 
-  public interface ISurveyService
-  {
+      _serviceObject.Setup(s => s.SubmitSurvey(providedList, username))
+        .Returns(expectedValue);
+
+      var actualValue =
+        _serviceObject.Object.SubmitSurvey(providedList, username);
+      
+      Assert.Equal(expectedValue, actualValue);
+    }
   }
 }
