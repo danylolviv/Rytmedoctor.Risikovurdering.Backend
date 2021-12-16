@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Models;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.IRepositories;
@@ -7,15 +9,22 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services
 {
   public class SurveyService : ISurveyService
   {
-    public SurveyService(ISurveyRepository repoMockObject)
+    
+    ISurveyRepository _repo;
+    
+    public SurveyService(ISurveyRepository surveyRepository)
     {
-      throw new System.NotImplementedException();
+      _repo = surveyRepository;
+      if (surveyRepository is null)
+      {
+        throw new InvalidDataException("Cannot create instance of service without a repository");
+      }
     }
 
 
     public bool SubmitSurvey(List<QuestionAnswerPair> providedList, string username)
     {
-      throw new System.NotImplementedException();
+      return _repo.SubmitSurvey(providedList, username);
     }
   }
 }

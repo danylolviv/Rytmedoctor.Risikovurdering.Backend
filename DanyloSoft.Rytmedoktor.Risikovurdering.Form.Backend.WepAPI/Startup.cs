@@ -7,6 +7,7 @@ using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Repositories;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain;
+using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.IRepositories;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services;
@@ -140,6 +141,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
       services.AddScoped<ISecurityService, SecurityService>();
       services.AddScoped<IAuthUserService, AuthUserService>();
       services.AddScoped<IAuthDbSeeder, AuthDbSeeding>();
+      
+      //Survey Setup
+      services.AddScoped<ISurveyRepository, SurveyRepository>();
+      services.AddScoped<ISurveyService, SurveyService>();
 
     }
     
