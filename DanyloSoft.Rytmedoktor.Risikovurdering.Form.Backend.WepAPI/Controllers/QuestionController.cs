@@ -26,6 +26,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
         [HttpGet]
         public ActionResult<List<FormQuestion>> GetQuestions()
         {
+            //test
             return _service.GetQuestions();
         }
 
