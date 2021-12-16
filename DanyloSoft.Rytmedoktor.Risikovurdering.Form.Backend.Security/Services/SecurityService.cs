@@ -1,6 +1,7 @@
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Authentication;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -22,7 +23,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
 
     public IConfiguration Configuration { get; set; }
 
-    public JwtToken generateJwtToken(string username, string password)
+    public JwtToken GenerateJwtToken(string username, string password)
     {
       var user = _authServ.GetUser(username);
       if (Authenticate(user, password))
@@ -43,7 +44,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
           Message = "Ok"
         }; 
       }
-      return new JwtToken() {Message = "user was not forund in database"};
+      throw new AuthenticationException("username or password is incorrect");
     }
 
     private bool Authenticate(AuthUser user, string password)

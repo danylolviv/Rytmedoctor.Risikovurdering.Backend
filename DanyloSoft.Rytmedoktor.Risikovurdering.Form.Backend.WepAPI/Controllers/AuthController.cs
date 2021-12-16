@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Authentication;
 using System.Threading.Tasks;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security;
 using Microsoft.AspNetCore.Authorization;
@@ -24,12 +25,24 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
         [HttpPost(nameof(Login))]
         public ActionResult<TokenDto> Login(LoginDto dto)
         {
-            var token = _service.generateJwtToken(dto.Username, dto.Password);
-            return new TokenDto()
+            try
             {
-                Jwt = token.Jwt,
-                Message = token.Message
-            };
+                var token =
+                    _service.GenerateJwtToken(dto.Username, dto.Password);
+                return Ok(new TokenDto
+                {
+                    Jwt = token.Jwt,
+                    Message = token.Message
+                });
+            }
+            catch (AuthenticationException authException)
+            {
+                return Unauthorized(authException.Message);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Please contact admin, aka horribly wrong");
+            }
         }
 
     }
