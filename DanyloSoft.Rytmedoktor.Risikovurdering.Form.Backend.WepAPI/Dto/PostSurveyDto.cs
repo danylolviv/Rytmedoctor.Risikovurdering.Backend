@@ -6,6 +6,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Dto
   public class PostSurveyDto
   {
     public string username { get; set; }
-    public List<QuestionAnswerPair> listPairs { get; set; }
+    public List<QuestionAnswerDto> listAnswerPairs { get; set; }
   }
 }

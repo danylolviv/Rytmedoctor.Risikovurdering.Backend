@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
+using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Models;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +24,13 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
         [HttpPost]
         public ActionResult<bool> SubmitSurvey(PostSurveyDto postSurveyDto)
         {
-            return _service.SubmitSurvey(postSurveyDto.listPairs, postSurveyDto.username);
+            var listModel = postSurveyDto.listAnswerPairs.Select(pair =>
+                new QuestionAnswerPair
+                {
+                    Answer = pair.answer,
+                    Question = pair.question
+                }).ToList();
+            return _service.SubmitSurvey(listModel, postSurveyDto.username);
         }
     }
 }
