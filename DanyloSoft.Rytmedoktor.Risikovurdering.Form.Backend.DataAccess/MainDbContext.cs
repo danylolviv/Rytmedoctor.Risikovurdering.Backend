@@ -14,6 +14,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
     public DbSet<FormQuestionEntity> FormQuestions { get; set; }
     public DbSet<AnswerOptionEntity> AnswerOptions { get; set; }
     public DbSet<QuestionTypeEntity> QuestionTypes { get; set; }
+    public DbSet<QuestionAnswerPairEntity> QuestionAnswerPair { get; set; }
+    public DbSet<UserEntity> User { get; set; }
 
   }
 }
