@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
@@ -68,6 +69,26 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
       _mock.Setup(r => r.FindQuestionById(mockId))
         .Returns(expectedQuestion);
       Assert.Equal(expectedQuestion, _service.GetQuestionById(mockId));
+    }
+
+    [Fact]
+    public void GetQuestionById_ProvidedWithIdZero_ThrowsArgumentExceptionError()
+    {
+      Assert.Throws<ArgumentException>(() =>
+      {
+        _service.GetQuestionById(0);
+      });
+    }
+
+    [Fact]
+    public void GetQuestionById_ProvidedWithIdZero_ThrowsMessage()
+    {
+      var exception = Assert.Throws<ArgumentException>(() =>
+      {
+        _service.GetQuestionById(0);
+      });
+      var expectedMessage = "Id provided cannot be equal to 0";
+      Assert.Equal(expectedMessage, exception.Message);
     }
 
     [Fact]
