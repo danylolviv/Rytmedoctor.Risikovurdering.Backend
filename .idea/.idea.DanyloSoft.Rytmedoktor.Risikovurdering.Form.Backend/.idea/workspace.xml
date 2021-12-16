@@ -6,21 +6,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3cdf7c-7c69-46d7-8a39-89ef7957e156" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/Dto/QuestionAnswerDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/Controllers/SurveyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/Controllers/SurveyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/Dto/PostSurveyDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/Dto/PostSurveyDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/SurveyForm.db" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/SurveyForm.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/SurveyForm.db-shm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/SurveyForm.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/ref/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/bin/Debug/net5.0/ref/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/ref/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/Debug/net5.0/ref/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,52 +173,41 @@
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="110" />
+    <option name="coveragePercentColumnWidth" value="144" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="376" />
+    <option name="symbolColumnWidth" value="162" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 32% 178/262" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 32% 178/262" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Core-Tests 35% 135/209" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Core 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 32% 178/262" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Core 19% 43/53" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Core 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain 70% 10/33" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 32% 178/262" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Core 19% 43/53" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core 36% 18/28" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Core 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain 70% 10/33" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services 70% 10/33" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 32% 178/262" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Core 19% 43/53" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain 0% 25/25" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 32% 178/262" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Core 19% 43/53" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain 0% 25/25" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services 0% 25/25" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 32% 178/262" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Core 19% 43/53" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain 0% 25/25" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services 0% 25/25" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="QuestionService 0% 23/23" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Core 54% 28/61" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain 70% 10/33" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services 70% 10/33" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="QuestionService 100% 0/23" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
