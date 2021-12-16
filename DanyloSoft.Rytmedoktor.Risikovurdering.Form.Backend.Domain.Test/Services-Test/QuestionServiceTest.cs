@@ -7,13 +7,12 @@ using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services;
 using Moq;
 using Xunit;
 
-namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
-  Services_Test
+namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test
 {
   public class QuestionServiceTest
   {
     private Mock<IQuestionRepository> _mock;
-    private QuestionService _service;
+    private IQuestionService _service;
 
     public QuestionServiceTest()
     {
