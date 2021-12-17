@@ -1,7 +1,11 @@
 using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Authentication;
 using System.Text;
+
+
+
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
@@ -15,6 +19,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
 
     public SecurityService(IAuthUserService authServ)
     {
+      var idk = new List<AuthUser>();
+      Console.Write(idk);
       _authServ = authServ;
     }
 
