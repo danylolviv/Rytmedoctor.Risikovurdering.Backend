@@ -65,5 +65,34 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
         iterationCount: 100000,
         numBytesRequested: 256 / 8));
     }
+
+    public AuthUser GenerateNewAuthUser(string username)
+    {
+      // generate a 128-bit salt using a cryptographically strong random sequence of nonzero values
+      var defaultpassword = "petro";
+      var salt = GenerateSalt();
+
+      var hashedPassword = HashedPassword(salt, defaultpassword);
+
+      AuthUser newUser = _authServ.Create(new AuthUser()
+      {
+        Username = username,
+        HashedPassword = hashedPassword,
+        Salt = salt,
+      });
+
+      return newUser;
+    }
+
+    public byte[] GenerateSalt()
+    {
+      var salt = new byte[128 / 8];
+      using (var rngCsp = new RNGCryptoServiceProvider())
+      {
+        rngCsp.GetNonZeroBytes(salt);
+      }
+
+      return salt;
+    }
   }
 }

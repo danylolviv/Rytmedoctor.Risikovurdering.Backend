@@ -32,8 +32,20 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
         Id = userEntity.Id,
         Username = userEntity.Username,
         HashedPassword = userEntity.HashedPassword,
-        Salt = Encoding.ASCII.GetBytes(userEntity.Salt)
+        Salt = Convert.FromBase64String(userEntity.Salt)
       };
+    }
+
+    public AuthUser SaveUser(AuthUser authUser)
+    {
+      var entity = _ctx.Add(new LoginUserEntity()
+      {
+        HashedPassword = authUser.HashedPassword,
+        Salt = Convert.ToBase64String(authUser.Salt),
+        Username = authUser.Username
+      }).Entity;
+      _ctx.SaveChanges();
+      return new AuthUser {Id = entity.Id, Username = entity.Username};
     }
   }
 }

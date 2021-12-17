@@ -4,5 +4,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
   {
     JwtToken GenerateJwtToken(string username, string password);
     string HashedPassword(byte[] userSalt, string password);
+    AuthUser GenerateNewAuthUser(string username);
+    byte[] GenerateSalt();
   }
 }
