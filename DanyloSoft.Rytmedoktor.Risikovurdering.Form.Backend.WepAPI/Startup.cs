@@ -177,6 +177,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
       {
         mainDbSeeding.SeedProduction();
         authDbSeeder.SeedProduction();
+        // we are in production sheeesh
       }
       
 
