@@ -15,13 +15,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
     private readonly IAuthUserService _authServ;
 
 
-    public SecurityService(IConfiguration configuration, IAuthUserService authServ)
+    public SecurityService(IAuthUserService authServ)
     {
-      Configuration = configuration;
       _authServ = authServ;
     }
-
-    public IConfiguration Configuration { get; set; }
 
     public JwtToken GenerateJwtToken(string username, string password)
     {
@@ -30,11 +27,14 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
       {
         var securityKey =
           new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(Configuration["jwtConfig:secret"]));
+            //Encoding.UTF8.GetBytes(Configuration["jwtConfig:secret"]));
+            Encoding.UTF8.GetBytes("Top secret, and nobody ever found it"));
         var credentials =
           new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-        var token = new JwtSecurityToken(Configuration["jwtConfig:issuer"],
-          Configuration["jwtConfig:audience"],
+        //var token = new JwtSecurityToken(Configuration["jwtConfig:issuer"],
+        var token = new JwtSecurityToken("https://localhost:5001",
+          //Configuration["jwtConfig:audience"],
+          "http://localhost:4200",
           null,
           expires: DateTime.Now.AddMinutes(10),
           signingCredentials: credentials);
