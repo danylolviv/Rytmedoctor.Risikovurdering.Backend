@@ -22,7 +22,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
 
     public void SeedProduction()
     {
-      throw new System.NotImplementedException();
+      _ctx.Database.EnsureCreated();
+      _securityService.GenerateNewAuthUser("petro");
     }
   }
 }

@@ -173,6 +173,12 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
         authDbSeeder.SeedDevelopment();
         
       }
+      else
+      {
+        mainDbSeeding.SeedProduction();
+        authDbSeeder.SeedProduction();
+      }
+      
 
       app.UseHttpsRedirection();
 
