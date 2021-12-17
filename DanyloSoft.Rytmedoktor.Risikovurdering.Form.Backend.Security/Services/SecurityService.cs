@@ -6,7 +6,6 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
-using Microsoft.Extensions.Configuration;
 
 namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
 {
