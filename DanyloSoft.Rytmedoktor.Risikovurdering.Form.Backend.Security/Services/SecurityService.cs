@@ -3,10 +3,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Authentication;
 using System.Text;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using Microsoft.Extensions.Configuration;
 
 namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
 {
