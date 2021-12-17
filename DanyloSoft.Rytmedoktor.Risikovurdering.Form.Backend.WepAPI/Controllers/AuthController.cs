@@ -42,6 +42,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.Message);
                 return StatusCode(500, "Please contact admin, aka horribly wrong, deploying");
             }
         }

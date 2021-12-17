@@ -52,7 +52,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.Servic
     [Fact]
     public void SubmitSurvey_CallsSubmitSurveyOnDB_OnlyOnce()
     {
-      var expectedValue = true;
       var providedList = new List<QuestionAnswerPair>();
       var username = "username";
       _service.SubmitSurvey(providedList, username);
