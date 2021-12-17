@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Authentication;
 using System.Threading.Tasks;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security;
+using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Dto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -45,17 +46,25 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
             }
         }
 
-    }
+        [HttpPost(nameof(CreateUser))]
+        public ActionResult<AuthUserDto> CreateUser([FromBody] CreateAuthUserDto createAuthUserDto)
+        {
+            try
+            {
+                var authUser =
+                    _service.GenerateNewAuthUser(createAuthUserDto.Username);
+                return new AuthUserDto
+                {
+                    Id = authUser.Id, 
+                    Username = authUser.Username
+                };
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return StatusCode(500, "contact administration");
+            }
+        }
 
-    public class TokenDto
-    {
-        public string Jwt { get; set; }
-        public string Message { get; set; }
-    }
-
-    public class LoginDto
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
     }
 }

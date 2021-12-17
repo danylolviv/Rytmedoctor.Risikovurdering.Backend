@@ -17,28 +17,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
     {
       _ctx.Database.EnsureDeleted();
       _ctx.Database.EnsureCreated();
-
-      var salt = "shim123!#";
-      
-      _ctx.LoginUsers.Add(new LoginUserEntity()
-      {
-        Id = 1, 
-        HashedPassword = _securityService.HashedPassword(Encoding.ASCII.GetBytes(salt), "petro"),
-        Salt = salt,
-        Username = "petro"
-      } );
-      _ctx.LoginUsers.Add(new LoginUserEntity()
-        {Id = 2, 
-          HashedPassword = _securityService.HashedPassword(Encoding.ASCII.GetBytes(salt), "password"), 
-          Salt = salt, 
-          Username = "admin"});
-      _ctx.LoginUsers.Add(new LoginUserEntity()
-        {Id = 3, 
-          HashedPassword = _securityService.HashedPassword(Encoding.ASCII.GetBytes(salt), "password"), 
-          Salt = salt, 
-          Username = "user"});
-
-      _ctx.SaveChanges();
+      _securityService.GenerateNewAuthUser("petro");
     }
 
     public void SeedProduction()
