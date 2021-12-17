@@ -42,7 +42,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
             }
             catch (Exception e)
             {
-                return StatusCode(500, "Please contact admin, aka horribly wrong");
+                return StatusCode(500, "Please contact admin, aka horribly wrong, checking actions");
             }
         }
 
