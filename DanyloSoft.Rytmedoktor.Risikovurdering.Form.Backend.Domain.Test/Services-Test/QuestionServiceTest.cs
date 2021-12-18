@@ -88,6 +88,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test
       });
       var expectedMessage = "Id provided cannot be equal to 0";
       Assert.Equal(expectedMessage, exception.Message);
+      //this should be incluided
     }
 
     [Fact]
