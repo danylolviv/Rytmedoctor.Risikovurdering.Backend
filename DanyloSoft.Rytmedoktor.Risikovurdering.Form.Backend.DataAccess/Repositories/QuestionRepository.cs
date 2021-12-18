@@ -88,31 +88,14 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
             OptionText = ao.OptionText,
             Weight = ao.Weight
           }).ToList() : null
-      };  
-      // todo entity states
-      //newQuestion.State = EntityState.
+      };
       var createdQuestion = _ctx.FormQuestions.Add(newQuestion).Entity;
-      // Todo Creating new question with options at the same time, without doing multiple requests.
       _ctx.SaveChanges();
-      /*foreach (var option in expectedQuestion.AnswerOptions)
-      {
-        var newOption = new AnswerOptionEntity()
-        {
-          OptionText = option.OptionText,
-          Weight = option.Weight,
-          QuestionId = createdQuestion.Id
-        };
-        _ctx.AnswerOptions.Add(newOption);
-      }
-      _ctx.SaveChanges();*/
       return new FormQuestion() {Title = createdQuestion.Title};
-      
-      // Strting on update
     }
 
     public FormQuestion UpdateQuestion(FormQuestion updatedQuestion)
     {
-      // Deleting old options
       var oldOptions = _ctx.AnswerOptions
         .Where(op => op.QuestionId == updatedQuestion.Id)
         .Select(o => new AnswerOptionEntity()
@@ -130,8 +113,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
           QuestionId = updatedQuestion.Id
         });
       _ctx.AnswerOptions.AddRange(newOptions);
-      
-      // Updating fields on the question
       var upQuestion = new FormQuestionEntity()
       {
         Id = updatedQuestion.Id,
@@ -139,8 +120,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
         Description = updatedQuestion.Description,
         TypeId = updatedQuestion.Type.Id
       };
-      
-      //Executing update
       _ctx.FormQuestions.Update(upQuestion);
       _ctx.SaveChanges();
       

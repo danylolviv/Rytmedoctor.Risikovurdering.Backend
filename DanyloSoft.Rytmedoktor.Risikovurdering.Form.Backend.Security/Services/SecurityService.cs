@@ -13,15 +13,12 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
   public class SecurityService : ISecurityService
   {
     private readonly IAuthUserService _authServ;
-
-
+    private IConfiguration Configuration { get; set; }
     public SecurityService(IConfiguration configuration, IAuthUserService authServ)
     {
       Configuration = configuration;
       _authServ = authServ;
     }
-
-    public IConfiguration Configuration { get; set; }
 
     public JwtToken GenerateJwtToken(string username, string password)
     {
