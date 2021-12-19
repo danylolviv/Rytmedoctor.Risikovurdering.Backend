@@ -24,5 +24,19 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.Test.Models.T
       option.Id = 7;
       Assert.Equal(7, option.Id);
     }
+
+    [Fact]
+    public void AnswerOption_OptionText_StoresString()
+    {
+      option.OptionText = "The option";
+      Assert.Equal("The option", option.OptionText);
+    }
+
+    [Fact]
+    public void AnswerOption_Weight_StoresInt()
+    {
+      option.Weight = 2;
+      Assert.Equal(2, option.Weight);
+    }
   }
 }

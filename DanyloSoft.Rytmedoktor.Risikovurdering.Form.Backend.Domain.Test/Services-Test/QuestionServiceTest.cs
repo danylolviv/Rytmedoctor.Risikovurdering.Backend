@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
@@ -69,6 +70,34 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
         .Returns(expectedQuestion);
       Assert.Equal(expectedQuestion, _service.GetQuestionById(mockId));
     }
+    
+    [Fact]
+    public void GetQuestionById_ProvidedWithIdZero_ThrowsArgumentExceptionError()
+    {
+      Assert.Throws<ArgumentException>(() =>
+      {
+        _service.GetQuestionById(0);
+      });
+    }
+
+    [Fact]
+    public void GetQuestionById_ProvidedWithIdZero_ThrowsMessage()
+    {
+      var exception = Assert.Throws<ArgumentException>(() =>
+      {
+        _service.GetQuestionById(0);
+      });
+      var expectedMessage = "Id provided cannot be equal to 0";
+      Assert.Equal(expectedMessage, exception.Message);
+    }
+
+    [Fact]
+    public void GetQuestionById_CallsMethodInRepo_Once()
+    {
+      _service.GetQuestionById(1);
+      _mock.Verify(r => r.FindQuestionById(1), Times.Once);
+    }
+
 
     [Fact]
     public void CreateQuestion_ProvidedWithFormQuestion_ReturnsQuestion()
@@ -77,6 +106,14 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
       _mock.Setup(r => r.CreateQuestion(expectedQuestion))
         .Returns(expectedQuestion);
       Assert.Equal(expectedQuestion, _service.CreateQuestion(expectedQuestion));
+      _mock.Verify(r => r.CreateQuestion(expectedQuestion), Times.Once);
+    }
+    
+    [Fact]
+    public void CreateQuestion_CallsCreateOnDatabase_OnlyOnce()
+    {
+      var expectedQuestion = new FormQuestion();
+      _service.CreateQuestion(expectedQuestion);
       _mock.Verify(r => r.CreateQuestion(expectedQuestion), Times.Once);
     }
 
@@ -92,7 +129,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
     [Fact]
     public void UpdateQuestion_CallsDatabase_Once()
     {
-      //todo amount of times called check on all methods
       var expectedQuestion = new FormQuestion();
       _service.UpdateQuestion(expectedQuestion);
       _mock.Verify(r => r.UpdateQuestion(expectedQuestion), Times.Once);
@@ -111,7 +147,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
     [Fact]
     public void DeleteQuestion_CallsDatabase_Once()
     {
-      //todo amount of times called check on all methods
       var expectedQuestion = new FormQuestion();
       var id = 9;
       _service.DeleteQuestion(id);

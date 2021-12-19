@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Core.IServices;
@@ -24,7 +25,11 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services
 
     public FormQuestion GetQuestionById(int id)
     {
-      return _repo.FindQuestionById(id);
+      if (id > 0)
+      {
+        return _repo.FindQuestionById(id);
+      }
+      throw new ArgumentException("Id provided cannot be equal to 0");
     }
 
     public FormQuestion CreateQuestion(FormQuestion expectedObject)
