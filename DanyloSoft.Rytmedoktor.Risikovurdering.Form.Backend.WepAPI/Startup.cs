@@ -178,12 +178,14 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
         
         mainDbSeeding.SeedDevelopment();
         authDbSeeder.SeedDevelopment();
+        app.UseCors("rytmedoctor-backend-policy");
         
       }
       else
       {
         mainDbSeeding.SeedProduction();
         authDbSeeder.SeedProduction();
+        app.UseCors("prod-cors");
         // we are in newProduction 
       }
       
@@ -196,8 +198,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
 
       app.UseAuthorization();
       
-      app.UseCors("rytmedoctor-backend-policy");
-      app.UseCors("prod-cors");
+      
+      
 
       app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
     }
