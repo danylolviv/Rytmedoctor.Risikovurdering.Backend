@@ -18,12 +18,17 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security
       _ctx.Database.EnsureDeleted();
       _ctx.Database.EnsureCreated();
       _securityService.GenerateNewAuthUser("petro");
+      _securityService.GenerateNewAuthUser("admin");
+      _securityService.GenerateNewAuthUser("customer");
+      
     }
 
     public void SeedProduction()
     {
       _ctx.Database.EnsureCreated();
       _securityService.GenerateNewAuthUser("petro");
+      _securityService.GenerateNewAuthUser("admin");
+      _securityService.GenerateNewAuthUser("customer");
     }
   }
 }

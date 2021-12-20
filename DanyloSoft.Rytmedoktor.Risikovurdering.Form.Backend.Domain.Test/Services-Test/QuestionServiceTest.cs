@@ -152,5 +152,22 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Test.
       _service.DeleteQuestion(id);
       _mock.Verify(r => r.DeleteQuestion(id), Times.Once);
     }
+
+    [Fact]
+    public void UpdateOrder_providedWithListQuest_ReturnsBoolean()
+    {
+      var listQuest = new List<FormQuestion>();
+      _mock.Setup(s => s.UpdateOrder(listQuest))
+        .Returns(true);
+      Assert.True(_service.UpdateOrder(listQuest));
+    }
+    
+    [Fact]
+    public void UpdateOrder_providedWithListQuest_CallsDbOnce()
+    {
+      var listQuest = new List<FormQuestion>();
+      _service.UpdateOrder(listQuest);
+      _mock.Verify(u => u.UpdateOrder(listQuest), Times.Once);
+    }
   }
 }

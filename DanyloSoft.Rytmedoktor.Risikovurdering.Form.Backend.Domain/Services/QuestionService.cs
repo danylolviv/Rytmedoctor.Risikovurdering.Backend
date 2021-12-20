@@ -48,5 +48,10 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services
     {
       return _repo.DeleteQuestion(id);
     }
+
+    public bool UpdateOrder(List<FormQuestion> listQuest)
+    {
+      return _repo.UpdateOrder(listQuest);
+    }
   }
 }

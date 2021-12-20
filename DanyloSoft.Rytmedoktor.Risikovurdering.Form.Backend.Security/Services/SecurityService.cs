@@ -66,7 +66,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Security.Services
     public AuthUser GenerateNewAuthUser(string username)
     {
       // generate a 128-bit salt using a cryptographically strong random sequence of nonzero values
-      var defaultpassword = "petro";
+      var defaultpassword = "password";
       var salt = GenerateSalt();
 
       var hashedPassword = HashedPassword(salt, defaultpassword);

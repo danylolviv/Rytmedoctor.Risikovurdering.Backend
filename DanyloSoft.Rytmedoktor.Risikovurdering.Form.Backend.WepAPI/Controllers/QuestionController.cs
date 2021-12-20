@@ -46,11 +46,23 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI.Controllers
             
             return _service.UpdateQuestion(updatedQuestion);
         }
-
+        
         [HttpDelete("{id}")]
         public ActionResult<FormQuestion> DeleteQuestion(int id)
         {
             return _service.DeleteQuestion(id);
+        }
+
+        [HttpPost(nameof(UpdatedQuestionOrder))]
+        public ActionResult<bool> UpdatedQuestionOrder(List<QuestionOrderPairDto> listPairs)
+        {
+            var listQuest = listPairs
+                .Select(pair => new FormQuestion()
+                {
+                    Id = pair.questionId,
+                    OrderId = pair.questionOrder
+                }).ToList();
+            return _service.UpdateOrder(listQuest);
         }
     }
 }

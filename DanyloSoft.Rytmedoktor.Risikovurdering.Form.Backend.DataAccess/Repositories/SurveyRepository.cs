@@ -23,23 +23,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
 
     public bool SubmitSurvey(List<QuestionAnswerPair> list, string username)
     {
-/*
-      var newUser = _ctx.User.Add(new UserEntity()
-      {
-        Username = username,
-        ListQuAnPairs = list != null ? list.Select(pair => new QuestionAnswerPairEntity
-          {
-            Answer = pair.Answer,
-            Question = pair.Question,
-          }
-        ).ToList() : null
-      });
-
-      var newUserEntity = newUser.Entity;
-
-      _ctx.SaveChanges();
-
- */
       var newUser = _ctx.User.Add(new UserEntity()
       {
         Username = username
@@ -47,8 +30,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
       
       _ctx.SaveChanges();
       
-      
-
       foreach (var pair in list)
       {
         _ctx.QuestionAnswerPair.Add(new QuestionAnswerPairEntity()
