@@ -124,10 +124,17 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
           builder =>
           {
             builder
+              .WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
-              .AllowAnyMethod()
-              .WithOrigins("http://localhost:4200");
+              .AllowAnyMethod();
           });
+        option.AddPolicy("prod-cors", policy =>
+        {
+          policy
+            .WithOrigins("https://form-builder-d87fc.firebaseapp.com")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+        });
       });
       
       //Main Setup
@@ -190,6 +197,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.WepAPI
       app.UseAuthorization();
       
       app.UseCors("rytmedoctor-backend-policy");
+      app.UseCors("prod-cors");
 
       app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
     }
