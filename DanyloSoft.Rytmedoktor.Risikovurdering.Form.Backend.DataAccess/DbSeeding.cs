@@ -75,7 +75,7 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
 
     public void SeedProduction()
     {
-      _ctx.Database.EnsureDeleted();
+     // _ctx.Database.EnsureDeleted();
       _ctx.Database.EnsureCreated();
       
       _ctx.QuestionTypes.Add(new QuestionTypeEntity{ TypeName = "Choicebox"});

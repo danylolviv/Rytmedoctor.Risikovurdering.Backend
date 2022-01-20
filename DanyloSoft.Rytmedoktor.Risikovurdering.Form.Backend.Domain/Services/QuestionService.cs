@@ -34,8 +34,6 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.Domain.Services
 
     public FormQuestion CreateQuestion(FormQuestion expectedObject)
     {
-      var variable = expectedObject;
-      
       return _repo.CreateQuestion(expectedObject);
     }
 
