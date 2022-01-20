@@ -78,6 +78,8 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess
      // _ctx.Database.EnsureDeleted();
       _ctx.Database.EnsureCreated();
       
+      // Student production
+      
       _ctx.QuestionTypes.Add(new QuestionTypeEntity{ TypeName = "Choicebox"});
       _ctx.QuestionTypes.Add(new QuestionTypeEntity{ TypeName = "Dropdown"});
       _ctx.QuestionTypes.Add(new QuestionTypeEntity{ TypeName = "Multiple select"});
