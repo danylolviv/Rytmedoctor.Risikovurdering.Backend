@@ -56,7 +56,14 @@ namespace DanyloSoft.Rytmedoktor.Risikovurdering.Form.Backend.DataAccess.Reposit
        {
          if (q.Id == 1) list.Remove(q);
        }
-       return list;
+
+       var orderedEn = from s in list
+         orderby s.OrderId
+         select s;
+       
+       var orderedListQuest = orderedEn.ToList();
+       
+       return orderedListQuest;
     }
 
     public FormQuestion FindQuestionById(int id)
